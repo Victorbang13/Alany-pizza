@@ -1,99 +1,132 @@
+<!-- Fortæller søgemaskiner som Google, at denne side ikke skal indekseres -->
 <meta name="robots" content="noindex">
 
+<!-- Indlæser Klaviyo-scriptet asynkront, så det ikke bremser indlæsning af siden -->
 <script async type='text/javascript' src='https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=Rupvfp'></script>
- 
+
+<!-- Kommentar til evt. deling eller reference -->
 <!--https://chatgpt.com/share/6835a8ea-db7c-8008-99d4-b70801e7a8ec -->
+
+<!-- Start på HEAD-sektionen -->
 <head>
+  <!-- Sætter tegnsætning til UTF-8, så danske tegn vises korrekt -->
   <meta charset="UTF-8" />
+
+  <!-- Gør designet responsivt – tilpasser skærmstørrelse og zoom -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Titel på fanebladet i browseren -->
   <title>Alanya Pizza Silkeborg</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+  <!-- Forbind til Google Fonts (hurtigere indlæsning) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <!-- Forbind til Google Fonts (gælder font-filer) -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Importerer 3 skrifttyper: Oswald, Roboto Slab og Roboto -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+  <!-- Start på intern CSS -->
   <style>
+    /* Nulstiller margin og padding, og box-sizing sikrer bedre layoutstyring */
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
 
+    /* Forhindrer horisontal scroll og sætter baggrundsfarve */
     html, body {
       overflow-x: hidden; 
-      background-color: #fff3e0;
+      background-color: #fff3e0; /* Lys beige/orange baggrund */
     }
 
+    /* Fælles styling for links i header og mobilnavigation */
     header a,
     .mobile-nav a {
-      text-decoration: none;
-      color: black !important;
-      font-weight: 600;
+      text-decoration: none;       /* Fjerner understregning */
+      color: black !important;     /* Gør tekst sort, uanset hvad */
+      font-weight: 600;            /* Halvfed skrift for tydelighed */
     }
 
     /* === DESKTOP HEADER === */
+    /* Styling af desktop header */
     header.desktop-only {
-      background-color: #fff3e0;
-      padding: 20px 40px;
+      background-color: #fff3e0;   /* Samme som baggrundsfarve */
+      padding: 20px 40px;          /* Indvendig afstand */
     }
 
+    /* Wrapper til indhold i desktop header */
     .desktop-header-container {
-      display: grid;
-      grid-template-columns: 1fr auto 1fr;
-      align-items: center;
-      max-width: 1100px;
-      margin: 0 auto;
+      display: grid;                                /* Bruger grid layout */
+      grid-template-columns: 1fr auto 1fr;           /* Venstre, center (logo), højre */
+      align-items: center;                           /* Centrerer vertikalt */
+      max-width: 1100px;                             /* Maks bredde på container */
+      margin: 0 auto;                                /* Centrerer på siden */
     }
 
+    /* Venstreside-menu (links) i header */
     .left-desktop-nav {
-      display: flex;
-      justify-content: flex-start;
-      gap: 30px;
+      display: flex;                                 /* Flex layout */
+      justify-content: flex-start;                   /* Justerer til venstre */
+      gap: 30px;                                     /* Afstand mellem links */
     }
 
+    /* Ekstra afstand til første link */
     .left-desktop-nav a:first-child {
       margin-right: 24px;
     }
 
+    /* Størrelse på links i venstre menu */
     .left-desktop-nav a {
       font-size: 24px;
     }
 
+    /* Container til logoet i midten */
     .desktop-logo {
       display: flex;
-      justify-content: center;
+      justify-content: center;                       /* Centrerer logo horisontalt */
     }
 
+    /* Størrelse på logo */
     .desktop-logo img {
       width: 200px;
       height: auto;
     }
 
+    /* Højreside-menu i header (bestil og kurv) */
     .right-desktop-nav {
       display: flex;
-      justify-content: flex-end;
+      justify-content: flex-end;                     /* Justerer til højre */
       gap: 30px;
       align-items: center;
     }
 
+    /* Styling af 'Bestil' knap */
     .bestil-btn-desktop {
-      background-color: #046CB5;
+      background-color: #046CB5;                     /* Blå farve */
       color: white !important;
       padding: 10px 20px;
-      border-radius: 25px;
+      border-radius: 25px;                           /* Afrundede hjørner */
       font-size: 24px;
       font-weight: 600;
     }
 
+    /* Wrapper til kurv-ikon og tekst */
     .cart-wrapper {
       display: flex;
       align-items: center;
       gap: 8px;
     }
 
+    /* Størrelse på kurv-ikon */
     .cart-icon {
       width: 26px;
       height: auto;
     }
 
+    /* Tekst ved kurv */
     .cart-text {
       font-size: 24px;
       font-weight: 600;
@@ -101,19 +134,24 @@
     }
 
     /* === MOBIL & TABLET === */
+    /* Mobil-indhold skjules som udgangspunkt */
     .mobile-only {
       display: none;
     }
 
+    /* Medieforespørgsel: gælder skærme under 768px */
     @media (max-width: 768px) {
+      /* Skjul desktop header på små skærme */
       .desktop-only {
         display: none !important;
       }
 
+      /* Vis mobil-indhold */
       .mobile-only {
         display: block;
       }
 
+      /* Container til mobil-header */
       .mobile-header-container {
         background-color: #fff3e0;
         padding: 20px 20px;
@@ -122,6 +160,7 @@
         align-items: center;
       }
 
+      /* Styling af burger-menu (3 linjer) */
       .burger-menu {
         display: flex;
         flex-direction: column;
@@ -130,22 +169,26 @@
         justify-self: start;
       }
 
+      /* Hver streg i burger-menuen */
       .burger-menu div {
         width: 25px;
         height: 3px;
         background-color: black;
       }
 
+      /* Container til mobil-logo */
       .mobile-logo {
         display: flex;
         justify-content: center;
       }
 
+      /* Størrelse på mobil-logo */
       .mobile-logo img {
         width: 140px;
         height: auto;
       }
 
+      /* Højre side af mobil-header (bestil og kurv) */
       .right-mobile {
         display: flex;
         align-items: center;
@@ -153,6 +196,7 @@
         justify-self: end;
       }
 
+      /* 'Bestil' knap på mobil */
       .mobile-bestil {
         background-color: #046CB5;
         color: white !important;
@@ -162,11 +206,13 @@
         font-weight: 600;
       }
 
+      /* Kurv-ikon i mobilvisning */
       .cart-icon {
         width: 22px;
         height: auto;
       }
 
+      /* Mobilnavigation skjules som standard */
       .mobile-nav {
         display: none;
         flex-direction: column;
@@ -175,10 +221,12 @@
         background-color: #f5f5f5;
       }
 
+      /* Når mobilenav får klassen 'active', vises den */
       .mobile-nav.active {
         display: flex;
       }
 
+      /* Styling af links i mobilnavigation */
       .mobile-nav a {
         font-size: 18px;
         color: black;
@@ -186,14 +234,18 @@
     }
   </style>
 
+  <!-- Script der håndterer mobilmenuen -->
   <script>
+    // Funktion der åbner/lukker mobilnavigationen ved at toggl'e 'active' klassen
     function toggleMobileMenu() {
       document.getElementById("mobileNav").classList.toggle("active");
     }
 
+    // Når hele DOM'en er indlæst
     document.addEventListener("DOMContentLoaded", () => {
-      const links = document.querySelectorAll(".mobile-nav a");
+      const links = document.querySelectorAll(".mobile-nav a"); // Alle links i mobilmenu
       links.forEach(link => {
+        // Når man klikker på et link, skjules mobilmenuen igen
         link.addEventListener("click", () => {
           document.getElementById("mobileNav").classList.remove("active");
         });
@@ -201,22 +253,27 @@
     });
   </script>
 </head>
+
+<!-- Start på body (visuelt indhold) -->
 <body>
 
   <!-- === DESKTOP HEADER === -->
   <header class="desktop-only">
     <div class="desktop-header-container">
+      <!-- Venstre navigation med Kontakt og Om os -->
       <div class="left-desktop-nav">
         <a href="https://alanya-pizza-silkeborg.alimoussa1.dk/kontakt-os/">Kontakt os</a>
         <a href="https://alanya-pizza-silkeborg.alimoussa1.dk/om-os/">Om os</a>
       </div>
 
+      <!-- Midten: Logo -->
       <div class="desktop-logo">
         <a href="/">
           <img src="https://alanya-pizza-silkeborg.alimoussa1.dk/wp-content/uploads/2025/05/Alanya-pizza-logo.webp" alt="Alanya Pizza Logo" />
         </a>
       </div>
 
+      <!-- Højre: Bestil knap og kurv -->
       <div class="right-desktop-nav">
         <a href="https://alanya-pizza-silkeborg.alimoussa1.dk/menukort/" class="bestil-btn-desktop">Bestil din pizza</a>
         <a href="https://alanya-pizza-silkeborg.alimoussa1.dk/kurv/" class="cart-wrapper">
@@ -229,22 +286,23 @@
 
   <!-- === MOBIL/TABLET HEADER === -->
   <div class="mobile-only">
+    <!-- Header container til mobil -->
     <div class="mobile-header-container">
-      <!-- Burger -->
+      <!-- Burger-menu (tre linjer) -->
       <div class="burger-menu" onclick="toggleMobileMenu()">
         <div></div>
         <div></div>
         <div></div>
       </div>
 
-      <!-- Logo -->
+      <!-- Mobil-logo -->
       <div class="mobile-logo">
         <a href="/">
           <img src="https://alanya-pizza-silkeborg.alimoussa1.dk/wp-content/uploads/2025/05/Alanya-pizza-logo.webp" alt="Alanya Pizza Logo" />
         </a>
       </div>
 
-      <!-- Bestil + kurv -->
+      <!-- Bestil-knap og kurv -->
       <div class="right-mobile">
         <a href="https://alanya-pizza-silkeborg.alimoussa1.dk/menukort/" class="mobile-bestil">Bestil nu</a>
         <a href="https://alanya-pizza-silkeborg.alimoussa1.dk/Kurv/">
@@ -253,7 +311,7 @@
       </div>
     </div>
 
-    <!-- Mobilnavigation -->
+    <!-- Mobilnavigation – skjult som standard -->
     <div class="mobile-nav" id="mobileNav">
       <a href="/">Forside</a>
       <a href="https://alanya-pizza-silkeborg.alimoussa1.dk/kontakt-os/">Kontakt os</a>
@@ -261,3 +319,4 @@
       <a href="https://alanya-pizza-silkeborg.alimoussa1.dk/menukort/">Menukort</a>
     </div>
   </div>
+
