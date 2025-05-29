@@ -1,0 +1,263 @@
+<meta name="robots" content="noindex">
+
+<script async type='text/javascript' src='https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=Rupvfp'></script>
+ 
+<!--https://chatgpt.com/share/6835a8ea-db7c-8008-99d4-b70801e7a8ec -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alanya Pizza Silkeborg</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      overflow-x: hidden; 
+      background-color: #fff3e0;
+    }
+
+    header a,
+    .mobile-nav a {
+      text-decoration: none;
+      color: black !important;
+      font-weight: 600;
+    }
+
+    /* === DESKTOP HEADER === */
+    header.desktop-only {
+      background-color: #fff3e0;
+      padding: 20px 40px;
+    }
+
+    .desktop-header-container {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      align-items: center;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .left-desktop-nav {
+      display: flex;
+      justify-content: flex-start;
+      gap: 30px;
+    }
+
+    .left-desktop-nav a:first-child {
+      margin-right: 24px;
+    }
+
+    .left-desktop-nav a {
+      font-size: 24px;
+    }
+
+    .desktop-logo {
+      display: flex;
+      justify-content: center;
+    }
+
+    .desktop-logo img {
+      width: 200px;
+      height: auto;
+    }
+
+    .right-desktop-nav {
+      display: flex;
+      justify-content: flex-end;
+      gap: 30px;
+      align-items: center;
+    }
+
+    .bestil-btn-desktop {
+      background-color: #046CB5;
+      color: white !important;
+      padding: 10px 20px;
+      border-radius: 25px;
+      font-size: 24px;
+      font-weight: 600;
+    }
+
+    .cart-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .cart-icon {
+      width: 26px;
+      height: auto;
+    }
+
+    .cart-text {
+      font-size: 24px;
+      font-weight: 600;
+      color: black;
+    }
+
+    /* === MOBIL & TABLET === */
+    .mobile-only {
+      display: none;
+    }
+
+    @media (max-width: 768px) {
+      .desktop-only {
+        display: none !important;
+      }
+
+      .mobile-only {
+        display: block;
+      }
+
+      .mobile-header-container {
+        background-color: #fff3e0;
+        padding: 20px 20px;
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        align-items: center;
+      }
+
+      .burger-menu {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+        justify-self: start;
+      }
+
+      .burger-menu div {
+        width: 25px;
+        height: 3px;
+        background-color: black;
+      }
+
+      .mobile-logo {
+        display: flex;
+        justify-content: center;
+      }
+
+      .mobile-logo img {
+        width: 140px;
+        height: auto;
+      }
+
+      .right-mobile {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        justify-self: end;
+      }
+
+      .mobile-bestil {
+        background-color: #046CB5;
+        color: white !important;
+        padding: 6px 12px;
+        border-radius: 25px;
+        font-size: 14px;
+        font-weight: 600;
+      }
+
+      .cart-icon {
+        width: 22px;
+        height: auto;
+      }
+
+      .mobile-nav {
+        display: none;
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px 40px;
+        background-color: #f5f5f5;
+      }
+
+      .mobile-nav.active {
+        display: flex;
+      }
+
+      .mobile-nav a {
+        font-size: 18px;
+        color: black;
+      }
+    }
+  </style>
+
+  <script>
+    function toggleMobileMenu() {
+      document.getElementById("mobileNav").classList.toggle("active");
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const links = document.querySelectorAll(".mobile-nav a");
+      links.forEach(link => {
+        link.addEventListener("click", () => {
+          document.getElementById("mobileNav").classList.remove("active");
+        });
+      });
+    });
+  </script>
+</head>
+<body>
+
+  <!-- === DESKTOP HEADER === -->
+  <header class="desktop-only">
+    <div class="desktop-header-container">
+      <div class="left-desktop-nav">
+        <a href="https://alanya-pizza-silkeborg.alimoussa1.dk/kontakt-os/">Kontakt os</a>
+        <a href="https://alanya-pizza-silkeborg.alimoussa1.dk/om-os/">Om os</a>
+      </div>
+
+      <div class="desktop-logo">
+        <a href="/">
+          <img src="https://alanya-pizza-silkeborg.alimoussa1.dk/wp-content/uploads/2025/05/Alanya-pizza-logo.webp" alt="Alanya Pizza Logo" />
+        </a>
+      </div>
+
+      <div class="right-desktop-nav">
+        <a href="https://alanya-pizza-silkeborg.alimoussa1.dk/menukort/" class="bestil-btn-desktop">Bestil din pizza</a>
+        <a href="https://alanya-pizza-silkeborg.alimoussa1.dk/kurv/" class="cart-wrapper">
+          <img src="https://alanya-pizza-silkeborg.alimoussa1.dk/wp-content/uploads/2025/05/Group-330.png" alt="Kurv" class="cart-icon" />
+          <span class="cart-text">Kurv</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- === MOBIL/TABLET HEADER === -->
+  <div class="mobile-only">
+    <div class="mobile-header-container">
+      <!-- Burger -->
+      <div class="burger-menu" onclick="toggleMobileMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <!-- Logo -->
+      <div class="mobile-logo">
+        <a href="/">
+          <img src="https://alanya-pizza-silkeborg.alimoussa1.dk/wp-content/uploads/2025/05/Alanya-pizza-logo.webp" alt="Alanya Pizza Logo" />
+        </a>
+      </div>
+
+      <!-- Bestil + kurv -->
+      <div class="right-mobile">
+        <a href="https://alanya-pizza-silkeborg.alimoussa1.dk/menukort/" class="mobile-bestil">Bestil nu</a>
+        <a href="https://alanya-pizza-silkeborg.alimoussa1.dk/Kurv/">
+          <img src="https://alanya-pizza-silkeborg.alimoussa1.dk/wp-content/uploads/2025/05/Group-330.png" alt="Kurv" class="cart-icon" />
+        </a>
+      </div>
+    </div>
+
+    <!-- Mobilnavigation -->
+    <div class="mobile-nav" id="mobileNav">
+      <a href="/">Forside</a>
+      <a href="https://alanya-pizza-silkeborg.alimoussa1.dk/kontakt-os/">Kontakt os</a>
+      <a href="https://alanya-pizza-silkeborg.alimoussa1.dk/om-os/">Om os</a>
+      <a href="https://alanya-pizza-silkeborg.alimoussa1.dk/menukort/">Menukort</a>
+    </div>
+  </div>
